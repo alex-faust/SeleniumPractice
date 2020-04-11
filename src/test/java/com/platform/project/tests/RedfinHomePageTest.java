@@ -28,13 +28,19 @@ public class RedfinHomePageTest
     public void openHomePage()
     {
         redfinHomePage.openHomePage();
-        Commons.check(driver, redfinHomePage.getClassName().equals("Tour homes without\n" + "leaving your couch"),
-                "Home Page Title didn't match.");
+        Commons.check(driver, redfinHomePage.getPageTitle().equals("SELLING"), "Home page titles do not match.");
     }
 
+    @Test
+    public void testResult()
+    {
+        redfinHomePage.openHomePage();
+        redfinHomePage.getToRealEstatePage();
+        redfinHomePage
+    }
     @AfterMethod
     public void cleanUp()
     {
-        driver.quit();
+        //driver.quit();
     }
 }
