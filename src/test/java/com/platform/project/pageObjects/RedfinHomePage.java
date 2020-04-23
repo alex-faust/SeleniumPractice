@@ -3,6 +3,7 @@ package com.platform.project.pageObjects;
 import com.platform.project.commons.*;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,18 +18,18 @@ public class RedfinHomePage
     @FindBy(xpath = "//div[@class='searchInputNode']//button[@class='inline-block SearchButton clickable float-right']" +
             "//*[local-name()='svg']")
     WebElement searchButton;
-    @FindBy(linkText = "https://www.redfin.com/city/19457/CA/Sunnyvale")
+    @FindBy(linkText = "Sunnyvale")
     WebElement sunnyVale;
 
-    @FindBy(xpath = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/header[2]/div[1]/div[1]/a[1]/*[local-name()='svg'][1]")
-    WebElement redFinLogo;
 
     private WebDriver driver;
+    private JavascriptExecutor javascriptExecutor;
     private Logger log = Logger.getLogger(RedfinHomePage.class);
 
     public RedfinHomePage(WebDriver driver)
     {
         this.driver = driver;
+        javascriptExecutor = (JavascriptExecutor) driver;
         PageFactory.initElements(driver, this);
     }
 
@@ -48,8 +49,8 @@ public class RedfinHomePage
     {
         searchBar.sendKeys("Sunnyvale");
         Commons.clickOnElement(driver, searchButton);
-
-        Commons.clickOnElement(driver, sunnyVale);
+        javascriptExecutor.executeScript("arguments[0].click();",sunnyVale);
+        //Commons.clickOnElement(driver, sunnyVale);
 
 
 

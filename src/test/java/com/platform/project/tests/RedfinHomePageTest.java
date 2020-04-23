@@ -2,6 +2,7 @@ package com.platform.project.tests;
 
 import com.platform.project.commons.*;
 import com.platform.project.pageObjects.RedfinHomePage;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -36,7 +37,7 @@ public class RedfinHomePageTest
     {
         redfinHomePage.openHomePage();
         redfinHomePage.getToRealEstatePage();
-        redfinHomePage
+        //redfinHomePage
     }
     @AfterMethod
     public void cleanUp()
