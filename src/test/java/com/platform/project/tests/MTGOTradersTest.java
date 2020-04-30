@@ -16,7 +16,7 @@ public class MTGOTradersTest
     MTGOTraders mtgoTraders;
     WebDriverManager webDriverManager;
 
-    @BeforeMethod
+    //@BeforeMethod
     public void setup()
     {
         webDriverManager = new WebDriverManager();
@@ -35,7 +35,7 @@ public class MTGOTradersTest
                 "Failed to open the MTGO home page");
     }
 
-    @Test
+    //@Test
     public void loginMTGO()
     {
         mtgoTraders.openHomePage();
@@ -43,7 +43,7 @@ public class MTGOTradersTest
         Commons.check(driver, mtgoTraders.getLoginPageTitle(), "login page not found");
     }
 
-    @AfterMethod
+    //@AfterMethod
     public void cleanUp()
     {
         driver.quit();

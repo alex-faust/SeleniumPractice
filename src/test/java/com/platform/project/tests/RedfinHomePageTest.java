@@ -37,11 +37,10 @@ public class RedfinHomePageTest
     {
         redfinHomePage.openHomePage();
         redfinHomePage.getToRealEstatePage();
-        //redfinHomePage
     }
     @AfterMethod
     public void cleanUp()
     {
-        //driver.quit();
+        driver.quit();
     }
 }
