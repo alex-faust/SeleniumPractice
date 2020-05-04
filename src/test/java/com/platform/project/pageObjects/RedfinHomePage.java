@@ -18,8 +18,8 @@ public class RedfinHomePage
     @FindBy(xpath = "//div[@class='searchInputNode']//button[@class='inline-block SearchButton clickable float-right']" +
             "//*[local-name()='svg']")
     WebElement searchButton;
-    @FindBy(linkText = "Sunnyvale")
-    WebElement sunnyVale;
+    //@FindBy(linkText = "Sunnyvale")
+    //WebElement sunnyVale;
 
 
     private WebDriver driver;
@@ -49,7 +49,7 @@ public class RedfinHomePage
     {
         searchBar.sendKeys("Sunnyvale");
         Commons.clickOnElement(driver, searchButton);
-        javascriptExecutor.executeScript("arguments[0].click();",sunnyVale);
+        //javascriptExecutor.executeScript("arguments[0].click();",sunnyVale);
         //Commons.clickOnElement(driver, sunnyVale);
 
 

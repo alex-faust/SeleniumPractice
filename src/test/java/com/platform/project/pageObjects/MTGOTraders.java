@@ -55,8 +55,8 @@ public class MTGOTraders
     {
         log.info("logging in to mtgo traders");
         Commons.clickOnElement(driver, loginButton);
-        email.sendKeys((ReadPropertyFile.getConfigPropertyVal("email")));
-        password.sendKeys((ReadPropertyFile.getConfigPropertyVal("password")));
+        email.sendKeys((ReadPropertyFile.getConfigPropertyVal("mtgoEmail")));
+        password.sendKeys((ReadPropertyFile.getConfigPropertyVal("mtgopass1")));
         Commons.clickOnElement(driver, signInButton);
     }
 
