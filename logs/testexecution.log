@@ -1,0 +1,15 @@
+2021-01-01 13:43:04,803, 0(ms), [com.platform.project.commons.ReadPropertyFile] - Value in property file for browser is chrome
+2021-01-01 13:43:04,819, 16(ms), [com.platform.project.commons.Commons] - Environment value for browser is equal to null
+2021-01-01 13:43:04,819, 16(ms), [com.platform.project.commons.WebDriverManager] - Chrome browser detected.
+2021-01-01 13:43:08,546, 3743(ms), [com.platform.project.commons.WebDriverManager] - Driver initialization successful.
+2021-01-01 13:43:08,584, 3781(ms), [com.platform.project.pageObjects.RedfinHomePage] - Opening the Redfin.com
+2021-01-01 13:43:08,584, 3781(ms), [com.platform.project.commons.ReadPropertyFile] - Value in property file for redfinHomepage is https://www.redfin.com/
+2021-01-01 13:43:11,761, 6958(ms), [com.platform.project.commons.Commons] -  is visible.
+2021-01-01 13:43:11,763, 6960(ms), [com.platform.project.commons.Commons] - Clicking on element.
+2021-01-01 13:43:14,910, 10107(ms), [com.platform.project.commons.Commons] - Sunnyvale
+Sunnyvale, CA, USA is visible.
+2021-01-01 13:43:14,910, 10107(ms), [com.platform.project.commons.Commons] - Clicking on element.
+2021-01-01 13:43:16,564, 11761(ms), [com.platform.project.pageObjects.RedfinHomePage] - Getting title of second page
+2021-01-01 13:43:17,832, 13029(ms), [com.platform.project.commons.Commons] - Sunnyvale Homes for Sale is visible.
+2021-01-01 13:43:17,870, 13067(ms), [com.platform.project.commons.Commons] - ELement text is: Sunnyvale Homes for Sale
+2021-01-01 13:43:17,871, 13068(ms), [com.platform.project.commons.Commons] - Check condition is true.

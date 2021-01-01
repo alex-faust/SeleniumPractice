@@ -9,7 +9,7 @@ public class JSUtil
 {
     private static Logger log = Logger.getLogger(Commons.class);
 
-    public static void flash(WebElement element, WebDriver driver)
+    public static void flash(WebDriver driver, WebElement element)
     {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         String bgColor = element.getCssValue("backgroundColor");

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.platform.project.tests.MTGOTradersTest">
+        <methods>
+          <include name="openHomePage"/>
+          <include name="openEbay"/>
+        </methods>
+      </class> <!-- com.platform.project.tests.MTGOTradersTest -->
+      <class name="com.platform.project.tests.RedfinHomePageTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="setup"/>
+          <include name="sunnyvaleBox"/>
+          <include name="openSecondPage"/>
+          <include name="gatherListOfPrices"/>
+        </methods>
+      </class> <!-- com.platform.project.tests.RedfinHomePageTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

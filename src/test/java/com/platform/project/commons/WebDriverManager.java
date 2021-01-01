@@ -103,4 +103,9 @@ public class WebDriverManager
         return getDriver(Commons.createEnvVariable("browser",
                 ReadPropertyFile.getConfigPropertyVal("browser")));
     }
+
+    public void quitDriver()
+    {
+        driver.quit();
+    }
 }

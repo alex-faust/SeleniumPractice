@@ -155,7 +155,7 @@ public class Commons
         if (isElementVisible(driver, el, seconds))
         {
             String elementText = el.getText();
-            log.info("ELement text is: " + elementText);
+            log.info("Element text is: " + elementText);
             return elementText;
         } else {
             return "";
@@ -193,4 +193,5 @@ public class Commons
         }
         return sheet;
     }
+
 }

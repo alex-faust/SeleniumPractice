@@ -5,7 +5,12 @@ import com.platform.project.commons.ReadPropertyFile;
 import com.platform.project.commons.WebDriverManager;
 import com.platform.project.pageObjects.MTGOTraders;
 import com.platform.project.pageObjects.RedfinHomePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -35,6 +40,20 @@ public class MTGOTradersTest
                 "Failed to open the MTGO home page");
     }
 
+    @Test
+    public void openEbay()
+    {
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/geckodriver.exe");
+
+        WebDriver driver2 = new FirefoxDriver();
+        WebDriverWait wait = new WebDriverWait(driver2, 20);
+        driver2.get("https://www.ebay.com/");
+        driver2.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys("iphones");
+        driver2.findElement(By.xpath("//input[@id='gh-btn']")).click();
+        //wait.until(ExpectedConditions.visibilityOf(driver2.findElement(By.xpath("//h3[contains(text(),'Apple iPhone 8 Plus (Factory Unlocked,Verizon,AT&T')]")))).click();
+        driver2.findElement(By.xpath("//li[2]//div[1]//div[1]//div[1]//a[1]//div[1]//img[1]")).click();
+        //driver2.quit();
+    }
     //@Test
     public void loginMTGO()
     {
