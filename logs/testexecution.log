@@ -1,15 +1,61 @@
-2021-01-01 13:43:04,803, 0(ms), [com.platform.project.commons.ReadPropertyFile] - Value in property file for browser is chrome
-2021-01-01 13:43:04,819, 16(ms), [com.platform.project.commons.Commons] - Environment value for browser is equal to null
-2021-01-01 13:43:04,819, 16(ms), [com.platform.project.commons.WebDriverManager] - Chrome browser detected.
-2021-01-01 13:43:08,546, 3743(ms), [com.platform.project.commons.WebDriverManager] - Driver initialization successful.
-2021-01-01 13:43:08,584, 3781(ms), [com.platform.project.pageObjects.RedfinHomePage] - Opening the Redfin.com
-2021-01-01 13:43:08,584, 3781(ms), [com.platform.project.commons.ReadPropertyFile] - Value in property file for redfinHomepage is https://www.redfin.com/
-2021-01-01 13:43:11,761, 6958(ms), [com.platform.project.commons.Commons] -  is visible.
-2021-01-01 13:43:11,763, 6960(ms), [com.platform.project.commons.Commons] - Clicking on element.
-2021-01-01 13:43:14,910, 10107(ms), [com.platform.project.commons.Commons] - Sunnyvale
+2021-01-16 16:31:14,900, 0(ms), [com.platform.project.commons.ReadPropertyFile] - Value in property file for browser is chrome
+2021-01-16 16:31:14,906, 6(ms), [com.platform.project.commons.Commons] - Environment value for browser is equal to null
+2021-01-16 16:31:14,906, 6(ms), [com.platform.project.commons.WebDriverManager] - Chrome browser detected.
+2021-01-16 16:31:19,254, 4354(ms), [com.platform.project.commons.WebDriverManager] - Driver initialization successful.
+2021-01-16 16:31:19,293, 4393(ms), [com.platform.project.pageObjects.RedfinHomePage] - Opening the Redfin.com
+2021-01-16 16:31:19,293, 4393(ms), [com.platform.project.commons.ReadPropertyFile] - Value in property file for redfinHomepage is https://www.redfin.com/
+2021-01-16 16:31:26,070, 11170(ms), [com.platform.project.commons.Commons] -  is visible.
+2021-01-16 16:31:26,070, 11170(ms), [com.platform.project.commons.Commons] - Clicking on element.
+2021-01-16 16:31:26,453, 11553(ms), [com.platform.project.commons.Commons] - Sunnyvale
 Sunnyvale, CA, USA is visible.
-2021-01-01 13:43:14,910, 10107(ms), [com.platform.project.commons.Commons] - Clicking on element.
-2021-01-01 13:43:16,564, 11761(ms), [com.platform.project.pageObjects.RedfinHomePage] - Getting title of second page
-2021-01-01 13:43:17,832, 13029(ms), [com.platform.project.commons.Commons] - Sunnyvale Homes for Sale is visible.
-2021-01-01 13:43:17,870, 13067(ms), [com.platform.project.commons.Commons] - ELement text is: Sunnyvale Homes for Sale
-2021-01-01 13:43:17,871, 13068(ms), [com.platform.project.commons.Commons] - Check condition is true.
+2021-01-16 16:31:26,453, 11553(ms), [com.platform.project.commons.Commons] - Clicking on element.
+2021-01-16 16:31:30,838, 15938(ms), [com.platform.project.commons.Commons] - No min is visible.
+2021-01-16 16:31:30,838, 15938(ms), [com.platform.project.commons.Commons] - Clicking on element.
+2021-01-16 16:31:31,211, 16311(ms), [com.platform.project.commons.Commons] - $850k is visible.
+2021-01-16 16:31:31,212, 16312(ms), [com.platform.project.commons.Commons] - Clicking on element.
+2021-01-16 16:31:31,501, 16601(ms), [com.platform.project.commons.Commons] - No max is visible.
+2021-01-16 16:31:31,501, 16601(ms), [com.platform.project.commons.Commons] - Clicking on element.
+2021-01-16 16:31:31,800, 16900(ms), [com.platform.project.commons.Commons] - $950k is visible.
+2021-01-16 16:31:31,800, 16900(ms), [com.platform.project.commons.Commons] - Clicking on element.
+2021-01-16 16:31:32,239, 17339(ms), [com.platform.project.commons.Commons] - Table is visible.
+2021-01-16 16:31:32,240, 17340(ms), [com.platform.project.commons.Commons] - Clicking on element.
+2021-01-16 16:31:37,555, 22655(ms), [com.platform.project.commons.Commons] - $899,000 is visible.
+2021-01-16 16:31:37,562, 22662(ms), [com.platform.project.commons.Commons] - Element text is: $899,000
+2021-01-16 16:31:37,634, 22734(ms), [com.platform.project.commons.Commons] - $899,000 is visible.
+2021-01-16 16:31:37,657, 22757(ms), [com.platform.project.commons.Commons] - Element text is: $899,000
+2021-01-16 16:31:37,742, 22842(ms), [com.platform.project.commons.Commons] - $899,000 is visible.
+2021-01-16 16:31:37,750, 22850(ms), [com.platform.project.commons.Commons] - Element text is: $899,000
+2021-01-16 16:31:37,836, 22936(ms), [com.platform.project.commons.Commons] - $899,000 is visible.
+2021-01-16 16:31:37,844, 22944(ms), [com.platform.project.commons.Commons] - Element text is: $899,000
+2021-01-16 16:31:37,942, 23042(ms), [com.platform.project.commons.Commons] - $949,888 is visible.
+2021-01-16 16:31:37,956, 23056(ms), [com.platform.project.commons.Commons] - Element text is: $949,888
+2021-01-16 16:31:38,044, 23144(ms), [com.platform.project.commons.Commons] - $938,000 is visible.
+2021-01-16 16:31:38,065, 23165(ms), [com.platform.project.commons.Commons] - Element text is: $938,000
+2021-01-16 16:31:38,150, 23250(ms), [com.platform.project.commons.Commons] - $898,000 is visible.
+2021-01-16 16:31:38,160, 23260(ms), [com.platform.project.commons.Commons] - Element text is: $898,000
+2021-01-16 16:31:38,245, 23345(ms), [com.platform.project.commons.Commons] - $916,795 is visible.
+2021-01-16 16:31:38,269, 23369(ms), [com.platform.project.commons.Commons] - Element text is: $916,795
+2021-01-16 16:31:38,374, 23474(ms), [com.platform.project.commons.Commons] - $899,999 is visible.
+2021-01-16 16:31:38,395, 23495(ms), [com.platform.project.commons.Commons] - Element text is: $899,999
+2021-01-16 16:31:38,497, 23597(ms), [com.platform.project.commons.Commons] - $899,000 is visible.
+2021-01-16 16:31:38,520, 23620(ms), [com.platform.project.commons.Commons] - Element text is: $899,000
+2021-01-16 16:31:38,625, 23725(ms), [com.platform.project.commons.Commons] - $899,000 is visible.
+2021-01-16 16:31:38,647, 23747(ms), [com.platform.project.commons.Commons] - Element text is: $899,000
+2021-01-16 16:31:38,750, 23850(ms), [com.platform.project.commons.Commons] - $940,000 is visible.
+2021-01-16 16:31:38,772, 23872(ms), [com.platform.project.commons.Commons] - Element text is: $940,000
+2021-01-16 16:31:38,872, 23972(ms), [com.platform.project.commons.Commons] - $916,795+ is visible.
+2021-01-16 16:31:38,895, 23995(ms), [com.platform.project.commons.Commons] - Element text is: $916,795+
+2021-01-16 16:31:38,895, 23995(ms), [com.platform.project.pageObjects.RedfinHomePage] - 899000true
+2021-01-16 16:31:38,895, 23995(ms), [com.platform.project.pageObjects.RedfinHomePage] - 899000true
+2021-01-16 16:31:38,895, 23995(ms), [com.platform.project.pageObjects.RedfinHomePage] - 899000true
+2021-01-16 16:31:38,895, 23995(ms), [com.platform.project.pageObjects.RedfinHomePage] - 899000true
+2021-01-16 16:31:38,895, 23995(ms), [com.platform.project.pageObjects.RedfinHomePage] - 949888true
+2021-01-16 16:31:38,895, 23995(ms), [com.platform.project.pageObjects.RedfinHomePage] - 938000true
+2021-01-16 16:31:38,896, 23996(ms), [com.platform.project.pageObjects.RedfinHomePage] - 898000true
+2021-01-16 16:31:38,896, 23996(ms), [com.platform.project.pageObjects.RedfinHomePage] - 916795true
+2021-01-16 16:31:38,896, 23996(ms), [com.platform.project.pageObjects.RedfinHomePage] - 899999true
+2021-01-16 16:31:38,896, 23996(ms), [com.platform.project.pageObjects.RedfinHomePage] - 899000true
+2021-01-16 16:31:38,896, 23996(ms), [com.platform.project.pageObjects.RedfinHomePage] - 899000true
+2021-01-16 16:31:38,896, 23996(ms), [com.platform.project.pageObjects.RedfinHomePage] - 940000true
+2021-01-16 16:31:38,896, 23996(ms), [com.platform.project.pageObjects.RedfinHomePage] - 916795true
+2021-01-16 16:31:38,896, 23996(ms), [com.platform.project.commons.Commons] - Check condition is true.

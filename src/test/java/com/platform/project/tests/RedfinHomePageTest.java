@@ -2,8 +2,8 @@ package com.platform.project.tests;
 
 import com.platform.project.commons.*;
 import com.platform.project.pageObjects.RedfinHomePage;
-import org.junit.Assert;
 import org.openqa.selenium.*;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -58,8 +58,13 @@ public class RedfinHomePageTest
     {
         redfinHomePage.openHomePage();
         redfinHomePage.getToRealEstatePage();
-        redfinHomePage.gatherPrices();
+        Commons.check(driver, redfinHomePage.gatherPrices(), "Prices are out of range.");
+        //Assert.assertTrue(redfinHomePage.gatherPrices());
     }
+
+
+
+
 
     @AfterMethod
     public void cleanUp()

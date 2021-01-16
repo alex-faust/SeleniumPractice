@@ -1,6 +1,7 @@
 package com.platform.project.pageObjects;
 
 import com.platform.project.commons.*;
+import com.platform.project.commons.waits.WaitUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
@@ -59,10 +60,6 @@ public class RedfinHomePage
     {
         log.info("Opening the Redfin.com");
         driver.get(ReadPropertyFile.getConfigPropertyVal("redfinHomepage"));
-
-        Map<String, String> map = new HashMap<>();
-        map.put("small", "uri");
-        map.put("medium", "uri");
     }
 
     public boolean isMainLogoVisible()
@@ -86,6 +83,7 @@ public class RedfinHomePage
 
     public void getToRealEstatePage()
     {
+        WaitUtils.sleep(3);
         searchBar.sendKeys("Sunnyvale");
         Commons.clickOnElement(driver, searchButton);
         Commons.clickOnElement(driver, sunnyvale);
@@ -99,51 +97,46 @@ public class RedfinHomePage
         return Commons.getElementText(driver, sunnyvaleTextBox);
     }
 
-    public void gatherPrices()
+    public boolean gatherPrices()
     {
-        Commons.clickOnElement(driver, minBox);
-        Commons.clickOnElement(driver, eightFifty);
-        Commons.clickOnElement(driver, maxBox);
-        Commons.clickOnElement(driver, nineFifty);
+        Commons.clickOnElement(driver, minBox, 5);
+        Commons.clickOnElement(driver, eightFifty, 5);
+        Commons.clickOnElement(driver, maxBox, 5);
+        Commons.clickOnElement(driver, nineFifty, 5);
         Commons.clickOnElement(driver, tableButton);
-        //JSUtil.drawBorder(table, driver);
 
-        WebElement tableList = driver.findElement(By.className("tableList"));
-        log.info("the table size is: " + tableList.getSize());
-        JSUtil.drawBorder(tableList, driver);
-        log.info("the text in the table is: " + tableList.getText());
+        WaitUtils.sleep(5);
 
-        //this gets one full row of the results
-        WebElement tableRow = driver.findElement(By.id("ReactDataTableRow_0"));
-        log.info("the table has " + tableRow.getText());
+        WebElement table = driver.findElement(By.xpath("//tbody"));
+        List<WebElement> tables = table.findElements(By.tagName("tr"));
+        ArrayList<Integer> prices = new ArrayList<>();
 
-        JSUtil.drawBorder(tableRow, driver);
-        List<String> texts = new ArrayList<>();
-        for(String s: texts)
+        boolean inRange = false;
+
+        for (int i = 0; i < tables.size(); i++)
         {
-            log.info(s);
+            WebElement t = driver.findElement(By.xpath("//tbody/tr[@id='ReactDataTableRow_" + i + "']/td[4]"));
+            if(prices.add(Integer.parseInt(Commons.getElementText(driver, t)
+                    .substring(1)
+                    .replace(",", "")
+                    .replace("+", "")
+                    .trim())));
         }
-        /*List<WebElement> column = tableList.findElements(By.className("column column_3 col_price"));
-        for (WebElement el : column)
+
+        for(int i = 0; i < prices.size(); i++)
         {
-
-            String location = el.getText().toLowerCase();
-            //Commons.isElementVisible(driver, div, 3);
-            *//*if (location.contains("sunnyvale") || location.contains("santa clara"))
+            if (prices.get(i) > 850000 || prices.get(i) < 950000)
             {
-                log.info("Homes exists for the searched condition");
-                log.info("Location identified successfully");
-            } else
-            {
-                log.info("There is no data to test");
+                log.info(prices.get(i) + "true");
+                inRange = true;
+            } else {
+                inRange = false;
+                break;
+            }
 
-            }*//*
+        }
 
-            log.info(location);
-        }*/
-
-
-
-
+        return inRange;
     }
+
 }

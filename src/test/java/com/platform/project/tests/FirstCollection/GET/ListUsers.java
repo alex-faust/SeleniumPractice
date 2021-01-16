@@ -22,4 +22,5 @@ public class ListUsers
                 .assertThat().statusLine("HTTP/1.1 200 OK");
     }
 
+
 }

@@ -12,14 +12,14 @@ C:\Users\abcle\IdeaProjects\SeleniumPractice\src\test\java\com\platform\project\
 C:\Users\abcle\IdeaProjects\SeleniumPractice\src\test\java\com\platform\project\commons\waits\WaitUtils.java
 C:\Users\abcle\IdeaProjects\SeleniumPractice\src\test\java\com\platform\project\commons\PageObjectManager.java
 C:\Users\abcle\IdeaProjects\SeleniumPractice\src\test\java\com\platform\project\steps\RedfinHomePageSteps.java
+C:\Users\abcle\IdeaProjects\SeleniumPractice\src\test\java\com\platform\project\tests\GmailPageTest.java
+C:\Users\abcle\IdeaProjects\SeleniumPractice\src\test\java\com\platform\project\pageObjects\GmailPage.java
 C:\Users\abcle\IdeaProjects\SeleniumPractice\src\test\java\com\platform\project\tests\POST\Demo1_POST.java
 C:\Users\abcle\IdeaProjects\SeleniumPractice\src\test\java\com\platform\project\tests\FirstCollection\GET\SingleUser.java
 C:\Users\abcle\IdeaProjects\SeleniumPractice\src\test\java\com\platform\project\commons\WebDriverManager.java
 C:\Users\abcle\IdeaProjects\SeleniumPractice\src\test\java\com\platform\project\runner\TestRunner.java
 C:\Users\abcle\IdeaProjects\SeleniumPractice\src\test\java\com\platform\project\steps\Hooks.java
 C:\Users\abcle\IdeaProjects\SeleniumPractice\src\test\java\com\platform\project\commons\TestContext.java
-C:\Users\abcle\IdeaProjects\SeleniumPractice\src\test\java\com\platform\project\pageObjects\MyGmail.java
 C:\Users\abcle\IdeaProjects\SeleniumPractice\src\test\java\com\platform\project\pageObjects\RedfinHomePage.java
 C:\Users\abcle\IdeaProjects\SeleniumPractice\src\test\java\com\platform\project\tests\MTGOTradersTest.java
-C:\Users\abcle\IdeaProjects\SeleniumPractice\src\test\java\com\platform\project\tests\TabPractice.java
 C:\Users\abcle\IdeaProjects\SeleniumPractice\src\test\java\com\platform\project\tests\GET\Demo2_GET.java
